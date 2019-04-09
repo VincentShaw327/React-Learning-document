@@ -1,4 +1,4 @@
-##  什么是JSX? {#什么是jsx}
+## 什么是JSX? {#什么是jsx}
 
 ### 一句话介绍: {#一句话介绍}
 
@@ -9,12 +9,20 @@
 
 ## JSX写法案例： {#jsx写法案例}
 
+* 嵌入表达式
+* 将JSX作为表达式引用
+* JSX属性值-字符串
+* JSX属性值-表达式
+* 闭合标签
+* 多层嵌套
+
+
+
 ### 1.嵌入表达式 {#1嵌入表达式}
 
 ```js
 let name='world'
 
-const element =<h1>Hello, {name}</h1>;//大括号内可嵌入任何合法JS表达式
 ```
 
 #### JavaScript有以下表达式类型： {#javascript有以下表达式类型}
@@ -43,7 +51,6 @@ let name='world'
 const element =<h1>Hello, {name}</h1>;
 
 const showJSX =<div className="show">{element}</div>;
-
 ```
 
 ## 4.JSX属性值-表达式 {#4jsx属性值-表达式}
@@ -54,6 +61,47 @@ let name='world'
 const element =<h1>Hello, {name}</h1>;
 
 const showJSX =<div className={{show:true,hidden:false}>{element}</div>;
+```
+
+## 5.闭合标签
+
+假如一个标签里面没有内容，你可以使用"/&gt;"来闭合标签，就像 XML 语法一样：
+
+```
+const element = <img src={user.avatarUrl} />;
+```
+
+## 6.多层嵌套
+
+```
+const element = (
+  <div>
+    <h1>Hello!</h1>
+    <h2>Good to see you here.</h2>
+  </div>
+);
+```
+
+## 7.JSX对象
+
+> **Babel 会把 JSX 转译成一个名为`React.createElement()`函数调用**
+>
+> _**以下两种写法完全等效!!**_
+
+```
+const element = (
+  <h1 className="greeting">
+    Hello, world!
+  </h1>
+);
+```
+
+```js
+const element = React.createElement(
+  'h1',
+  {className: 'greeting'},
+  'Hello, world!'
+);
 ```
 
 
