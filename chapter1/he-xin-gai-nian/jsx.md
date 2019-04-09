@@ -16,13 +16,12 @@
 * 闭合标签
 * 多层嵌套
 
-
-
 ### 1.嵌入表达式 {#1嵌入表达式}
 
 ```js
 let name='world'
 
+const element =<h1>Hello, {name}</h1>;
 ```
 
 #### JavaScript有以下表达式类型： {#javascript有以下表达式类型}
@@ -84,7 +83,7 @@ const element = (
 
 ## 7.JSX对象
 
-> **Babel 会把 JSX 转译成一个名为`React.createElement()`函数调用**
+> **Babel 会把 JSX 转译成一个名为**`React.createElement()`**函数调用**
 >
 > _**以下两种写法完全等效!!**_
 
