@@ -7,4 +7,5 @@
   * [核心概念](chapter1/he-xin-gai-nian.md)
     * [JSX](chapter1/he-xin-gai-nian/jsx.md)
     * [react渲染](chapter1/he-xin-gai-nian/react.md)
+    * [组件](chapter1/he-xin-gai-nian/zu-jian.md)
 
