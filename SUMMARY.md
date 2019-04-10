@@ -6,4 +6,5 @@
   * [开始使用](chapter1/kai-shi-shi-yong.md)
   * [核心概念](chapter1/he-xin-gai-nian.md)
     * [JSX](chapter1/he-xin-gai-nian/jsx.md)
+    * [react渲染](chapter1/he-xin-gai-nian/react.md)
 
